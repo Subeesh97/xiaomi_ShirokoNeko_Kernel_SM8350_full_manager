@@ -16994,7 +16994,7 @@ const struct file_operations wlan_hdd_state_fops = {
 };
 
 #ifndef FEATURE_WLAN_RESIDENT_DRIVER
-static int  wlan_hdd_state_ctrl_param_create(void)
+static int __maybe_unused wlan_hdd_state_ctrl_param_create(void)
 {
 	unsigned int wlan_hdd_state_major = 0;
 	int ret;
